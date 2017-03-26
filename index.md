@@ -1,5 +1,9 @@
 # Placeholder for my 'How-to' Raspberry Pi 3 Bramble
-# Test
+
+This page explains how I put together the Raspberry Pi 3 Bramble. Because I didn't know any Linux command line when I first started, this 
+recipe my sound condescendingly basic for anyone with basic Linux.
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/kronos455/stunning-raspberry-waffle/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

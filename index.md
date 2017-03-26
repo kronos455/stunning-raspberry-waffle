@@ -1,5 +1,6 @@
 # Placeholder for my 'How-to' Raspberry Pi 3 Bramble
 
+## Preface
 This page explains how I put together the Raspberry Pi 3 Bramble. Because I didn't know any Linux command line when I first started, this 
 recipe may sound condescendingly basic for anyone with basic Linux skills.
 

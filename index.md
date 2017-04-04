@@ -2,8 +2,14 @@
 
 ## Preface
 This page explains how I put together the Raspberry Pi 3 Bramble. Because I didn't know any Linux command line when I first started, this 
-recipe may sound condescendingly basic for anyone with basic Linux skills.
+recipe may sound condescendingly basic for anyone with basic Linux skills. However, I really want to keep the recipe as simple as possible to allow the most number of interested people to be able to replicate what I've done. 
 
+Let me know of any typos or anything else you feel this recipe is missing. This document might be a work-in-progress for a little while. I'm open to constructive criticism.
+
+## Supplies
+
+Raspberry PI 3 B's: I used 4. I've seen clusters built with as few as 2. The sky's the limit if you want to do more.
+USB Power Source: I used a 5-port power source. Just make sure your power source is a minimum of 2.5 amps per port. More on this later.
 
 ## Welcome to GitHub Pages
 

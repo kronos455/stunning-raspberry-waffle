@@ -57,6 +57,12 @@ https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspb
 
 https://robcnamahoe.wordpress.com/2016/12/06/setting-up-hadoop-on-a-raspberry-pi-cluster/
 
+All of these pages were useful in that they helped me put the pieces together to install Apache Hadoop 2.7.2. Maybe it was my inexperience at the time, but it felt as I wouldn't have been able to complete the project with only one of those pages alone.
+
+I spent the most time with the page at http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup.
+
+## The Setup 
+
 
 
 ## Welcome to GitHub Pages

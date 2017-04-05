@@ -499,6 +499,9 @@ Execute wordcount example from source code folder (~/hadoop-2.7.2-src/hadoop-map
 time hadoop jar hadoop-mapreduce-examples-2.7.2.jar wordcount /smallfile.txt /smallfile-out
 time hadoop jar hadoop-mapreduce-examples-2.7.2.jar wordcount /mediumfile.txt /mediumfile-out
 ```
+## Configure Multiple Nodes
+
+**_COMING SOON_**
 
 ## Welcome to GitHub Pages
 

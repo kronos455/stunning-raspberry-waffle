@@ -38,7 +38,7 @@ I did not make this cluster in a vacuum. I don't have the technical background n
 
 Begin here for Hadoop: 
 
-http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup
+[(http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup)]
 
 http://www.widriksson.com/raspberry-pi-2-hadoop-2-cluster/#Clear_HDFS_filesystem
 

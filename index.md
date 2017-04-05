@@ -411,8 +411,36 @@ mapred-site.xml
     </property>
 </configuration>
 ```
+### Configure Single Node
 
+### Edit configuration files in /opt/hadoop/etc/hadoop
 
+core-site.xml
+```
+<configuration>
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>/hdfs/tmp</value>
+  </property>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:54310</value>
+  </property>
+</configuration>
+```
+hdfs-site.xml
+```
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.blocksize</name>
+    <value>5242880</value>
+  </property>
+</configuration>
+```
 
 ## Welcome to GitHub Pages
 

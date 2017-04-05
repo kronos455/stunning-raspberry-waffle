@@ -63,6 +63,49 @@ I spent the most time with the page at http://www.widriksson.com/raspberry-pi-ha
 
 ## The Setup 
 
+Download Raspbian Jessie Lite (RP3B recommended OS) from Github user caiomsouza: https://github.com/caiomsouza/raspberrypi/releases. This is an older release of Jessie but it worked well with this project. I would recommend enabling SSH & password protect your RP3B immediately as soon as you power those puppies up and plug them into your network. Seems like nefarious characters hijack IOT devices for their nefarious purposes.
+
+### A Single Node
+
+We're going to start this project with a single node. My advisors at school always encourage me to get my ideas working first then scale later.
+
+So that's what we're going to do.
+
+Here's a tutorial of how to get the OS onto the MicroSD card: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+
+If you're lucky enough to own a Mac, as I am, you can use ApplePi Baker, which is an easy and nifty program to put the OS image onto the MicroSD card. https://www.tweaking4all.com/news/applepi-baker-v1-9-1-update/
+
+Once you have prepped the MicroSD card with the OS, with the power off, you'll insert it into the RP3B motherboard. That slot is on the front (as opposed to the back where the USB & ethernet ports are).
+
+Power on the RP3B. 
+
+Once that's powered on, you'll need to find the IP address of the RP3B. You can do that by logging onto your router and looking for the new device. The router's IP address is usually something like 192.168.x.x. Unless you've changed it or this is printed on the bottom or side of the router, the username is usually admin and password is usually password.
+
+One more note: Let's say you have a cable modem/router. Then you probably took the router that you plugged the RP3B into and plugged that into the cable modem/router. That's not a problem but you'll just need to remember (write it down) the IP address of both.
+
+Then, if you have Windows you'll use Putty (https://www.bitvise.com/ssh-client-download), you'll open up the terminal and SSH into the RP3B device.
+
+This is going to look something like this:
+
+```markdown
+`brandon-mitchells-computer:~ bmitchell$ ssh pi@192.168.x.x`
+```
+
+
+Go through the setup and ensure the following configuration or adjust it to your choice:
+
+Expand SD card
+Set password
+Choose console login
+Chose keyboard layout and locales
+Overclocking, High, 900MHz CPU, 250MHz Core, 450MHz SDRAM (If you do any voltmodding ensure you have a good power supply for the PI)
+Under advanced options:
+Hostname: node1
+Memory split: 16mb
+Enable SSH Server
+Restart the PI.
+
+
 
 
 ## Welcome to GitHub Pages

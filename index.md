@@ -353,6 +353,10 @@ yarn-site.xml
     </property>
 </configuration>
 ```
+### MapReduce 2 configuration properties (mapred-site.xml)
+
+For more details see:
+https://hadoop.apache.org/docs/r2.7.2/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml
 
 mapred-site.xml
 ```

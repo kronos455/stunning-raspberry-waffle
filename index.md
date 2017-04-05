@@ -63,11 +63,11 @@ All of these pages were useful in that they helped me put the pieces together to
 
 I spent the most time with the page at http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup.
 
-## The Setup 
+# The Setup 
 
 Download Raspbian Jessie Lite (RP3B recommended OS) from Github user caiomsouza: https://github.com/caiomsouza/raspberrypi/releases. This is an older release of Jessie but it worked well with this project. I would recommend enabling SSH & password protect your RP3B immediately as soon as you power those puppies up and plug them into your network. Seems like nefarious characters hijack IOT devices for their nefarious purposes.
 
-### A Single Node
+## A Single Node
 
 We're going to start this project with a single node. My advisors at school always encourage me to get my ideas working first then scale later.
 
@@ -178,7 +178,6 @@ Install protobuf 2.5.0
 
 This is required to build Hadoop.
 ```
-sudo wget https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.gz
 sudo wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
 sudo tar xzvf protobuf-2.5.0.tar.gz
 cd protobuf-2.5.0
@@ -187,6 +186,29 @@ make; make check; sudo make install ### Pro-tip: You can copy line by line into 
                                     ### or use the semi-colon to chain the commands. 
 ```
 
+### Install Hadoop 2.7.2
+
+#### Download and build
+```
+wget http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.7.2/hadoop-2.7.2-src.tar.gz
+tar xzvf hadoop-2.7.2-src.tar.gz
+```
+Java 8 uses a more strict syntax than previous version. We need to be less strict to be able to compile Hadoop 2.7.2. To fix this edit:
+
+hadoop-2.7.2-src/pom.xml
+Between <properties></properties> tags insert the following:
+
+<additionalparam>-Xdoclint:none</additionalparam>
+For Hadoop 2.7.2 to build properly we also need to apply a patch.
+
+cd hadoop-2.7.2-src/hadoop-common-project/hadoop-common/src
+wget https://issues.apache.org/jira/secure/attachment/12570212/HADOOP-9320.patch
+patch < HADOOP-9320.patch
+cd ~/hadoop-2.7.2-src/
+
+To start build Hadoop run the following: (Note this may take ~1,5 hours)
+
+sudo mvn package -Pdist,native -DskipTests -Dtar
 
 
 

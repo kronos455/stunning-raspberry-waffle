@@ -40,17 +40,17 @@ Begin here for Hadoop:
 
 [http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup](http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup)
 
-http://www.widriksson.com/raspberry-pi-2-hadoop-2-cluster/#Clear_HDFS_filesystem
+[http://www.widriksson.com/raspberry-pi-2-hadoop-2-cluster/#Clear_HDFS_filesystem](http://www.widriksson.com/raspberry-pi-2-hadoop-2-cluster/#Clear_HDFS_filesystem)
 
-http://arturmkrtchyan.com/how-to-setup-multi-node-hadoop-2-yarn-cluster
+[http://arturmkrtchyan.com/how-to-setup-multi-node-hadoop-2-yarn-cluster](http://arturmkrtchyan.com/how-to-setup-multi-node-hadoop-2-yarn-cluster)
 
-https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/
+[https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/](https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/)
 
-https://robcnamahoe.wordpress.com/2016/12/06/setting-up-hadoop-on-a-raspberry-pi-cluster/
+[https://robcnamahoe.wordpress.com/2016/12/06/setting-up-hadoop-on-a-raspberry-pi-cluster/](https://robcnamahoe.wordpress.com/2016/12/06/setting-up-hadoop-on-a-raspberry-pi-cluster/)
 
 All of these pages were useful in that they helped me put the pieces together to install Apache Hadoop 2.7.2. Maybe it was my inexperience at the time, but it felt as I wouldn't have been able to complete the project with only one of those pages alone. I had to piecemeal them together to get the recipe below.
 
-I spent the most time with the page at http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup.
+I spent the most time with the page at [http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup](http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup).
 
 I have cut & paste snippets from these websites into this recipe to make it easier to write. Hopefully, the writers of those blogs don't mind me standing on the shoulders of giants.
 
@@ -140,7 +140,7 @@ Run _*update-alternatives*_, ensure *_jdk-8-oracle-xxx_* is selected:
 
 Be sure to take a look at the documentation to know what libraries must be installed to run Hadoop natively on the RP3B, as we intend to do.
 
-https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/NativeLibraries.html
+[https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/NativeLibraries.html](https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/NativeLibraries.html)
 
 Run these installs:
 
@@ -301,7 +301,7 @@ Some of the challanges of running Hadoop on the Raspberry is the limited resourc
 
 ### YARN Configuration (yarn-site.xml)
 
-For more details see: https://hadoop.apache.org/docs/r2.7.2/hadoop-yarn/hadoop-yarn-common/yarn-default.xml
+For more details see: [https://hadoop.apache.org/docs/r2.7.2/hadoop-yarn/hadoop-yarn-common/yarn-default.xml](https://hadoop.apache.org/docs/r2.7.2/hadoop-yarn/hadoop-yarn-common/yarn-default.xml)
 
 yarn-site.xml
 ```
@@ -363,7 +363,7 @@ yarn-site.xml
 ### MapReduce 2 configuration properties (mapred-site.xml)
 
 For more details see:
-https://hadoop.apache.org/docs/r2.7.2/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml
+[https://hadoop.apache.org/docs/r2.7.2/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml](https://hadoop.apache.org/docs/r2.7.2/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml)
 
 mapred-site.xml
 ```
@@ -488,7 +488,7 @@ If all processes not are visible review log files in /opt/hadoop/logs
 
 ### Run hadoop hello world – wordcount
 
-Download sample files http://www.widriksson.com/wp-content/uploads/2014/10/hadoop_sample_txtfiles.tar.gz
+[Download sample files](http://www.widriksson.com/wp-content/uploads/2014/10/hadoop_sample_txtfiles.tar.gz)
 
 Run all commands as hduser. Extract the files to home directory of hduser.
 ```

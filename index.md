@@ -457,7 +457,31 @@ sudo chmod 750 /hdfs/tmp
 cd /hdfs/tmp
 hadoop namenode -format
 ```
-Start Hadoop
+### Start Hadoop
+
+Run the following commands as hduser:
+```
+bash start-dfs-sh ### Bash assuming you're running Jessie Lite.
+bash start-yarn.sh
+```
+Or you could do what I did and run `bash start-all.sh`.
+
+Verify that all services started correctly:
+```
+jps
+```
+Result should show the following active processes:
+```
+1413 NodeManager
+838 NameNode
+1451 Jps
+1085 SecondaryNameNode
+942 DataNode
+1311 ResourceManager
+```
+If all processes not are visible review log files in /opt/hadoop/logs
+
+```
 
 ## Welcome to GitHub Pages
 

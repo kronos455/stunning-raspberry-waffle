@@ -137,7 +137,7 @@ static domain_name_servers=123.123.123.123 123.123.123.123 ##change this to what
                                                            ##as the DNS on your router. 
 ```
 
-##Update system and install Oracle Java
+### Update system and install Oracle Java
 
 
 

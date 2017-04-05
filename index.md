@@ -89,8 +89,17 @@ This is going to look something like this:
 
 ```markdown
 kronos455s-computer:~ kronos455$ ssh pi@192.168.x.x ##This is your command line. 'pi' is the user name. 
-                                                    ##You'll be asked the password next. It was 'raspberry' for me.
+                                                    ##You'll be asked the password next. It was 'raspberry' 
+                                                    ##for me.
 ```
+For the novice, you'll only use the `ssh pi@192.168.x.x` after the dollar sign. It could be a hash sign as well. Putty is a bit different in that you'll open Putty, select SSH, enter the username `pi`, enter the address `192.168.x.x`, and enter the password `raspberry`.
+
+Once you login and enter the password successfully, you'll be asked to accept a certificate as an added security precaution. Accept it. This will keep keep someone else from being able to use that card in another device. This will be an issue later on in the recipe when you replicate the single-node image in order to set up the cluster. But this is fine. There is a work around. 
+
+Now that you've successfully logged in, you'll configure the RP3B.
+
+That's done by using the following command:
+
 
 
 Go through the setup and ensure the following configuration or adjust it to your choice:

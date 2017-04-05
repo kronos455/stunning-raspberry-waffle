@@ -76,7 +76,7 @@ Once that's powered on, you'll need to find the IP address of the RP3B. You can 
 
 One more note: Let's say you have a cable modem/router. Then you probably took the router that you plugged the RP3B into and plugged that into the cable modem/router. That's not a problem but you'll just need to remember (write it down) the IP address of both.
 
-Then, if you have Windows you'll use Putty (https://www.bitvise.com/ssh-client-download), you'll open up the terminal and SSH into the RP3B device.
+Then, if you have Windows you'll use [Putty](https://www.bitvise.com/ssh-client-download), you'll open up the terminal and SSH into the RP3B device.
 
 This is going to look something like this:
 

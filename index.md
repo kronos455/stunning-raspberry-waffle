@@ -170,8 +170,21 @@ exit
 ```
 Or, if you kind of know what you're doing in Linux, just do all of this from the user root. I found it easier (it's not more secure, though).
 
+### Compile Native Hadoop 2.7.2 for Raspberry PI (ARM)
 
+Ensure you have logged out as hduser and logged in as pi user. (for sudo command below to work properly)
 
+Install protobuf 2.5.0
+
+This is required to build Hadoop.
+```
+sudo wget https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.gz
+sudo wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
+sudo tar xzvf protobuf-2.5.0.tar.gz
+cd protobuf-2.5.0
+./configure --prefix=/usr
+make; make check; sudo make install
+```
 
 
 

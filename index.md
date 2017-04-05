@@ -481,6 +481,23 @@ Result should show the following active processes:
 ```
 If all processes not are visible review log files in /opt/hadoop/logs
 
+### Run hadoop hello world – wordcount
+
+Download sample files http://www.widriksson.com/wp-content/uploads/2014/10/hadoop_sample_txtfiles.tar.gz
+
+Run all commands as hduser. Extract the files to home directory of hduser.
+```
+tar -xvzf hadoop_sample_txtfiles.tar.gz ~/
+```
+Upload files to HDFS:
+```
+hadoop fs -put smallfile.txt /smallfile.txt
+hadoop fs -put mediumfile.txt /mediumfile.txt
+```
+Execute wordcount example from source code folder (~/hadoop-2.7.2-src/hadoop-mapreduce-project/hadoop-mapreduce-examples/target/):
+```
+time hadoop jar hadoop-mapreduce-examples-2.7.2.jar wordcount /smallfile.txt /smallfile-out
+time hadoop jar hadoop-mapreduce-examples-2.7.2.jar wordcount /mediumfile.txt /mediumfile-out
 ```
 
 ## Welcome to GitHub Pages

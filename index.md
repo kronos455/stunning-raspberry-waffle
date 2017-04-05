@@ -88,7 +88,8 @@ Then, if you have Windows you'll use Putty (https://www.bitvise.com/ssh-client-d
 This is going to look something like this:
 
 ```markdown
-brandon-mitchells-computer:~ bmitchell$ ssh pi@192.168.x.x
+kronos455s-computer:~ kronos455$ ssh pi@192.168.x.x ##This is your command line. 'pi' is the user name. 
+                                                    ##You'll be asked the password next. It was 'raspberry' for me.
 ```
 
 

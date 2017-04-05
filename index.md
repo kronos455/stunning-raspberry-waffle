@@ -139,7 +139,11 @@ static domain_name_servers=123.123.123.123 123.123.123.123 ##change this to what
 
 ### Update system and install Oracle Java
 
+`sudo apt-get update; sudo apt-get install oracle-java8-jdk`
 
+Run _*update-alternatives*_, ensure *_jdk-8-oracle-xxx_* is selected:
+
+`sudo update-alternatives --config java`
 
 
 

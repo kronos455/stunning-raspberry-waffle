@@ -56,7 +56,7 @@ I have cut & paste snippets from these websites into this recipe to make it easi
 
 # The Setup 
 
-Download Raspbian Jessie Lite (RP3B recommended OS) from Github user caiomsouza: https://github.com/caiomsouza/raspberrypi/releases. This is an older release of Jessie but it worked well with this project. I would recommend enabling SSH & password protect your RP3B immediately as soon as you power those puppies up and plug them into your network. Seems like nefarious characters hijack IOT devices for their nefarious purposes.
+Download Raspbian [Jessie Lite](https://github.com/caiomsouza/raspberrypi/releases) (RP3B recommended OS) from Github user caiomsouza. This is an older release of Jessie but it worked well with this project. I would recommend enabling SSH & password protect your RP3B immediately as soon as you power those puppies up and plug them into your network. Seems like nefarious characters hijack IOT devices for their nefarious purposes.
 
 ## A Single Node
 
@@ -64,7 +64,7 @@ We're going to start this project with a single node. My advisors at school alwa
 
 So that's what we're going to do.
 
-Here's a tutorial of how to get the OS onto the MicroSD card: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+Here's a [tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) of how to get the OS onto the MicroSD card.
 
 If you're lucky enough to own a Mac, as I am, you can use [ApplePi Baker](https://www.tweaking4all.com/news/applepi-baker-v1-9-1-update/), which is an easy and nifty program to put the OS image onto the MicroSD card.
 

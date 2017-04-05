@@ -268,7 +268,7 @@ bzip2: true /lib/arm-linux-gnueabihf/libbz2.so.1
 openssl: true /usr/lib/arm-linux-gnueabihf/libcrypto.so
 ```
 
-Check version
+#### Check version
 
 `hadoop version`
 ```
@@ -280,7 +280,7 @@ From source with checksum d0fda26633fa762bff87ec759ebe689c
 This command was run using /opt/hadoop/share/hadoop/common/hadoop-common-2.7.2.jar
 ```
 
-Configure environment variables
+#### Configure environment variables
 
 In /etc/bash.bashrc, add to bottom of file:
 ```

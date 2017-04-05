@@ -147,6 +147,22 @@ Run _*update-alternatives*_, ensure *_jdk-8-oracle-xxx_* is selected:
 
 `sudo update-alternatives --config java`
 
+### Hadoop Documentation
+
+Be sure to take a look at the documentation to know what libraries must be installed to run Hadoop natively on the RP3B, as we intend to do.
+
+https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-common/NativeLibraries.html
+
+Run these installs:
+
+```
+sudo apt-get update
+sudo apt-get install build-essential
+sudo apt-get install zlib1g-dev gzip bzip2 liblz4-tool
+sudo apt-get install python-tk python-setuptools ipython
+sudo python -m easy_install -U snappy
+```
+
 ### Configure Hadoop user
 
 Create a new user for use with Hadoop:

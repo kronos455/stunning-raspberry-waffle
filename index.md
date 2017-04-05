@@ -183,7 +183,8 @@ sudo wget https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2
 sudo tar xzvf protobuf-2.5.0.tar.gz
 cd protobuf-2.5.0
 ./configure --prefix=/usr
-make; make check; sudo make install
+make; make check; sudo make install ### Pro-tip: You can copy line by line into the command line
+                                    ### or use the semi-colon to chain the commands. 
 ```
 
 

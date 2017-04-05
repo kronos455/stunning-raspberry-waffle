@@ -59,7 +59,7 @@ https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspb
 
 https://robcnamahoe.wordpress.com/2016/12/06/setting-up-hadoop-on-a-raspberry-pi-cluster/
 
-All of these pages were useful in that they helped me put the pieces together to install Apache Hadoop 2.7.2. Maybe it was my inexperience at the time, but it felt as I wouldn't have been able to complete the project with only one of those pages alone.
+All of these pages were useful in that they helped me put the pieces together to install Apache Hadoop 2.7.2. Maybe it was my inexperience at the time, but it felt as I wouldn't have been able to complete the project with only one of those pages alone. I had to piecemeal them together to get the recipe below.
 
 I spent the most time with the page at http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup.
 
@@ -276,7 +276,18 @@ export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_HOME=$HADOOP_INSTALL
 ```
+### Edit and change varibales in Hadoop environment.sh (/opt/hadoop/etc/hadoop/)
 
+```
+sudo nano /opt/hadoop/etc/hadoop/Hadoop_environment.sh
+```
+```
+export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+```
+Enable the use of native hadoop library and IPv4 stack:
+```
+export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=$HADOOP_INSTALL/lib/native -Djava.net.preferIPv4Stack=true"
+```
 
 
 

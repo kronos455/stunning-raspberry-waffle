@@ -100,7 +100,7 @@ Now that you've successfully logged in, you'll configure the RP3B.
 
 That's done by using the following command:
 
-
+` sudo raspi-config `
 
 Go through the setup and ensure the following configuration or adjust it to your choice:
 

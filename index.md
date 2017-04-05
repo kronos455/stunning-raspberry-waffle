@@ -63,6 +63,8 @@ All of these pages were useful in that they helped me put the pieces together to
 
 I spent the most time with the page at http://www.widriksson.com/raspberry-pi-hadoop-cluster/#The_setup.
 
+I have cut & paste snippets from these websites into this recipe to make it easier to write. Hopefully, the writers of those blogs don't mind me standing on the shoulders of giants.
+
 # The Setup 
 
 Download Raspbian Jessie Lite (RP3B recommended OS) from Github user caiomsouza: https://github.com/caiomsouza/raspberrypi/releases. This is an older release of Jessie but it worked well with this project. I would recommend enabling SSH & password protect your RP3B immediately as soon as you power those puppies up and plug them into your network. Seems like nefarious characters hijack IOT devices for their nefarious purposes.
@@ -228,7 +230,7 @@ sudo cp -R hadoop-2.7.2 /opt/hadoop
 ```
 Give access to hduser
 ```
-sudo chown -R hduser.hadoop /opt/hadoop/
+sudo chown -R hduser:hadoop /opt/hadoop/
 ```
 Verify installation and native libraries
 ```
@@ -441,6 +443,21 @@ hdfs-site.xml
   </property>
 </configuration>
 ```
+### Slaves
+
+Currently we only have one node. Keep default value of localhost. We will later add all our nodes here for a multi-node setup.
+```
+localhost
+```
+### Format HDFS filesystem
+```
+sudo mkdir -p /hdfs/tmp ## This actually saves to a folder that is '/'. The '/opt' folder is there, too.
+sudo chown hduser:hadoop /hdfs/tmp
+sudo chmod 750 /hdfs/tmp
+cd /hdfs/tmp
+hadoop namenode -format
+```
+Start Hadoop
 
 ## Welcome to GitHub Pages
 

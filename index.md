@@ -124,15 +124,24 @@ Install a text editor of your choice. I like Nano for the beginner. If you have 
 Edit as root or with sudo:
 /etc/network/interfaces
 
-` sudo nano /etc/network/interfaces`
+` sudo nano /etc/dhcpcd.conf`
+
+At the bottom of the file add:
 
 ```markdown
 iface eth0 inet static
-address 192.168.x.x //IP address of your RP3B
-netmask 255.255.255.0 //This is usually the same on most routers. Check yours to make sure.
-gateway: 192.168.0.1 //This is the address of the router that you plug the RP3B directly into. 
-
+address 192.168.x.x ## IP address of your RP3B
+netmask 255.255.255.0 ## This is usually the same on most routers. Check yours to make sure.
+gateway: 192.168.0.1 ## This is the address of the router that you plug the RP3B directly into. 
+static domain_name_servers=123.123.123.123 123.123.123.123 ##change this to whatever is showing
+                                                           ##as the DNS on your router. 
 ```
+
+##Update system and install Oracle Java
+
+
+
+
 
 ## Welcome to GitHub Pages
 

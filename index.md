@@ -160,8 +160,8 @@ su hduser
 mkdir ~/.ssh
 ssh-keygen -t rsa -P ""
 cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
-Login as hduser (answer yes when prompted to trust certificate key – otherwise Hadoop will fail to login later)
 ```
+Login into `localhost` as hduser (answer yes when prompted to trust certificate key – otherwise Hadoop will fail to login later)
 
 ```
 su hduser

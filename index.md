@@ -192,12 +192,16 @@ make; make check; sudo make install ### Pro-tip: You can copy line by line into 
 
 #### Download and build
 ```
-wget http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.7.2/hadoop-2.7.2-src.tar.gz
+sudo wget http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.7.2/hadoop-2.7.2-src.tar.gz
 tar xzvf hadoop-2.7.2-src.tar.gz
 ```
 Java 8 uses a more strict syntax than previous version. We need to be less strict to be able to compile Hadoop 2.7.2. To fix this edit:
 
 `hadoop-2.7.2-src/pom.xml`
+
+```
+sudo nano hadoop-2.7.2-src/pom.xml
+```
 
 Between `<properties></properties>` tags insert the following:
 ```
@@ -206,7 +210,7 @@ Between `<properties></properties>` tags insert the following:
 For Hadoop 2.7.2 to build properly we also need to apply a patch.
 ```
 cd hadoop-2.7.2-src/hadoop-common-project/hadoop-common/src
-wget https://issues.apache.org/jira/secure/attachment/12570212/HADOOP-9320.patch
+sudo wget https://issues.apache.org/jira/secure/attachment/12570212/HADOOP-9320.patch
 patch < HADOOP-9320.patch
 cd ~/hadoop-2.7.2-src/
 ```

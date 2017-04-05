@@ -88,7 +88,7 @@ Then, if you have Windows you'll use Putty (https://www.bitvise.com/ssh-client-d
 This is going to look something like this:
 
 ```markdown
-`brandon-mitchells-computer:~ bmitchell$ ssh pi@192.168.x.x`
+brandon-mitchells-computer:~ bmitchell$ ssh pi@192.168.x.x
 ```
 
 

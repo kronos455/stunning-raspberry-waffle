@@ -219,11 +219,63 @@ To start build Hadoop run the following: (Note this may take ~1,5 hours)
 sudo mvn package -clean -Pdist,native -DskipTests -Dtar
 ```
 
+### Install
 
+Copy compiled binaries to /opt
+```
+cd hadoop-dist/target/
+sudo cp -R hadoop-2.7.2 /opt/hadoop
+```
+Give access to hduser
+```
+sudo chown -R hduser.hadoop /opt/hadoop/
+```
+Verify installation and native libraries
+```
+su hduser
+cd /opt/hadoop/bin
+hadoop checknative -a
+```
+The output should look like:
 
+```
+16/03/24 20:20:03 INFO bzip2.Bzip2Factory: Successfully loaded & initialized native-bzip2 library system-native
+16/03/24 20:20:03 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+Native library checking:
+hadoop: true /opt/hadoop/lib/native/libhadoop.so.1.0.0
+zlib: true /lib/arm-linux-gnueabihf/libz.so.1
+snappy: true /usr/lib/libsnappy.so.1
+lz4: true revision:99
+bzip2: true /lib/arm-linux-gnueabihf/libbz2.so.1
+openssl: true /usr/lib/arm-linux-gnueabihf/libcrypto.so
+```
 
+Check version
 
+`hadoop version`
+```
+Hadoop 2.7.2
+Subversion Unknown -r Unknown
+Compiled by root on 2016-02-21T19:05Z
+Compiled with protoc 2.5.0
+From source with checksum d0fda26633fa762bff87ec759ebe689c
+This command was run using /opt/hadoop/share/hadoop/common/hadoop-common-2.7.2.jar
+```
 
+Configure environment variables
+
+In /etc/bash.bashrc, add to bottom of file:
+```
+export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+export HADOOP_INSTALL=/opt/hadoop
+export PATH=$PATH:$HADOOP_INSTALL/bin
+export PATH=$PATH:$HADOOP_INSTALL/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
+export HADOOP_COMMON_HOME=$HADOOP_INSTALL
+export HADOOP_HDFS_HOME=$HADOOP_INSTALL
+export YARN_HOME=$HADOOP_INSTALL
+export HADOOP_HOME=$HADOOP_INSTALL
+```
 
 
 

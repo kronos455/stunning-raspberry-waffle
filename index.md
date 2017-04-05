@@ -10,7 +10,7 @@ Let me know of any typos or anything else you feel this recipe is missing. This 
 
 ## Components
 
-- Raspberry PI 3 B's: I used 4. I've seen clusters built with as few as 2. The sky's the limit if you want to do more. I also refer to these as 'RP3B' because typing more than I have to seem inefficient. Sources: [Link](http://www.microcenter.com/product/460968/Raspberry_Pi_3_Model_B, http://amzn.to/2oFOKu4)
+- Raspberry PI 3 B's: I used 4. I've seen clusters built with as few as 2. The sky's the limit if you want to do more. I also refer to these as 'RP3B' because typing more than I have to seem inefficient. Sources: [Link](http://www.microcenter.com/product/460968/Raspberry_Pi_3_Model_B), [Link](http://amzn.to/2oFOKu4)
 
 - USB Power Source: I used a 5-port power source. Just make sure your power source is a minimum of 2.5 amps per port (the power source sold seperately for the RP3B is 5 amp). More on this later.  Sources: http://amzn.to/2ozrd1h
 

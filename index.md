@@ -202,6 +202,8 @@ make; make check; sudo make install ### Pro-tip: You can copy line by line into 
 sudo wget http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.7.2/hadoop-2.7.2-src.tar.gz
 tar xzvf hadoop-2.7.2-src.tar.gz
 ```
+If that website doesn't work, go to the find a new download link by going to the [Apache site](http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.7.3/hadoop-2.7.3-src.tar.gz) that recommends a new mirror.
+
 Java 8 uses a more strict syntax than previous version. We need to be less strict to be able to compile Hadoop 2.7.2. To fix this edit:
 
 `hadoop-2.7.2-src/pom.xml`

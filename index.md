@@ -10,32 +10,23 @@ Let me know of any typos or anything else you feel this recipe is missing. This 
 
 ## Components
 
---> Raspberry PI 3 B's: I used 4. I've seen clusters built with as few as 2. The sky's the limit if you want to do more. I also refer to these as 'RP3B' because typing more than I have to seem inefficient.
-Sources: http://www.microcenter.com/product/460968/Raspberry_Pi_3_Model_B, http://amzn.to/2oFOKu4
+- Raspberry PI 3 B's: I used 4. I've seen clusters built with as few as 2. The sky's the limit if you want to do more. I also refer to these as 'RP3B' because typing more than I have to seem inefficient. Sources: http://www.microcenter.com/product/460968/Raspberry_Pi_3_Model_B, http://amzn.to/2oFOKu4
 
---> USB Power Source: I used a 5-port power source. Just make sure your power source is a minimum of 2.5 amps per port (the power source sold seperately for the RP3B is 5 amp). More on this later. 
-Sources: http://amzn.to/2ozrd1h
+- USB Power Source: I used a 5-port power source. Just make sure your power source is a minimum of 2.5 amps per port (the power source sold seperately for the RP3B is 5 amp). More on this later.  Sources: http://amzn.to/2ozrd1h
 
---> A router: I used a basic, 5-port router to start. It was cheap. Then I was invited present the cluster to some folks at the university I attend for my Master's and I needed a wireless to make the cluster remotely. It's up to you. 
-Sources: (wired) http://amzn.to/2oGa02T, (wireless) http://amzn.to/2oFQ5kF
+- A router: I used a basic, 5-port router to start. It was cheap. Then I was invited present the cluster to some folks at the university I attend for my Master's and I needed a wireless to make the cluster remotely. It's up to you.  Sources: (wired) http://amzn.to/2oGa02T, (wireless) http://amzn.to/2oFQ5kF
 
---> 32 GB Micro SD cards: I had 4 Raspberry PI's so I bought 4 Micro SD Cards. You can go small or big on the disk volume, depending on your intended use, however, I would HIGHLY recommend Class 10 or above if possible. The higher the class, the faster the read & write speeds. I noticed that the Class 10's were significantly faster than the Class 4's I started out with. 
-Sources: http://amzn.to/2oA7LBh
+- 32 GB Micro SD cards: I had 4 Raspberry PI's so I bought 4 Micro SD Cards. You can go small or big on the disk volume, depending on your intended use, however, I would HIGHLY recommend Class 10 or above if possible. The higher the class, the faster the read & write speeds. I noticed that the Class 10's were significantly faster than the Class 4's I started out with. Sources: http://amzn.to/2oA7LBh
 
---> Micro USB cables: You'll need 4. I liked the flat ones. Makes it easy to aesthetically manage the cables. 
-Sources: http://amzn.to/2oznxwD
+- Micro USB cables: You'll need 4. I liked the flat ones. Makes it easy to aesthetically manage the cables.  Sources: http://amzn.to/2oznxwD
 
---> Ethernet Patch Cables: You'll need 4. These are flat, too. 
-Sources: http://amzn.to/2oFYCnW
+- Ethernet Patch Cables: You'll need 4. These are flat, too.  Sources: http://amzn.to/2oFYCnW
 
---> Electrical Strip: Need one to plug in your power source and router. Out of caution, I bought one that had some surge protection and an accompanying guarantee. They are a little more expensive but they make you feel like you're protecting your newly acquired toy during a thunder-storm. 
-Sources: http://amzn.to/2ozuI7J
+- Electrical Strip: Need one to plug in your power source and router. Out of caution, I bought one that had some surge protection and an accompanying guarantee. They are a little more expensive but they make you feel like you're protecting your newly acquired toy during a thunder-storm.  Sources: http://amzn.to/2ozuI7J
 
---> USB Fan: Just for fun. 
-Sources: http://amzn.to/2oFYHb2
+- USB Fan: Just for fun.  Sources: http://amzn.to/2oFYHb2
 
---> Acrylic, Stacked Case: Gives a nice presentation of the cluster. 
-Sources: http://amzn.to/2ozuIEN
+- Acrylic, Stacked Case: Gives a nice presentation of the cluster. Sources: http://amzn.to/2ozuIEN
 
 This is how I assembled the cluster. Feel free to get artistic. Just keep in mind that there are certain thing that you can't change - each RP3B absolutely needs 2.5 amps or more power, etc. And this isn't an endorsement of Amazon but they do make things easier.
 

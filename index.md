@@ -4,6 +4,8 @@
 This page explains how I put together the Raspberry Pi 3 Bramble. Because I didn't know any Linux command line when I first started, this 
 recipe may sound condescendingly basic for anyone with basic Linux skills. However, I really want to keep the recipe as simple as possible to allow the most number of interested people to be able to replicate what I've done. 
 
+I will assume that the reader can operate a computer or can ask a friend for help.
+
 Let me know of any typos or anything else you feel this recipe is missing. This document might be a work-in-progress for a little while. I'm open to constructive criticism. I'll put some pics in as well at a later date. I realize that this page, as is, is as bland as toast.
 
 ## Components
@@ -115,7 +117,12 @@ Go through the setup and ensure the following configuration or adjust it to your
 - --> Enable SSH Server
 - --> Restart the PI.
 
+Install a text editor of your choice. I like Nano for the beginner. If you have Raspbian Jessie Lite installed you can do that with this little bit of code:
 
+` sudo apt-get install nano `
+
+Edit as root or with sudo:
+/etc/network/interfaces
 
 
 ## Welcome to GitHub Pages

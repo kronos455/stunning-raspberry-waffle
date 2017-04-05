@@ -172,6 +172,8 @@ Or, if you kind of know what you're doing in Linux, just do all of this from the
 
 ### Compile Native Hadoop 2.7.2 for Raspberry PI (ARM)
 
+We compile Hadoop 2.7.2 for the Raspberry PI in order to, or so I've read but can't cite, avoid error messages that Hadoop will throw if we just download and install a pre-compiled version.
+
 Ensure you have logged out as hduser and logged in as pi user. (for sudo command below to work properly)
 
 Install protobuf 2.5.0
@@ -195,10 +197,12 @@ tar xzvf hadoop-2.7.2-src.tar.gz
 ```
 Java 8 uses a more strict syntax than previous version. We need to be less strict to be able to compile Hadoop 2.7.2. To fix this edit:
 
-hadoop-2.7.2-src/pom.xml
-Between <properties></properties> tags insert the following:
+`hadoop-2.7.2-src/pom.xml`
 
+Between <properties></properties> tags insert the following:
+```
 <additionalparam>-Xdoclint:none</additionalparam>
+```
 For Hadoop 2.7.2 to build properly we also need to apply a patch.
 
 cd hadoop-2.7.2-src/hadoop-common-project/hadoop-common/src

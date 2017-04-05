@@ -104,16 +104,16 @@ That's done by using the following command:
 
 Go through the setup and ensure the following configuration or adjust it to your choice:
 
-Expand SD card
-Set password
-Choose console login
-Chose keyboard layout and locales
-Overclocking, High, 900MHz CPU, 250MHz Core, 450MHz SDRAM (If you do any voltmodding ensure you have a good power supply for the PI)
-Under advanced options:
-Hostname: node1
-Memory split: 16mb
-Enable SSH Server
-Restart the PI.
+--> Expand SD card
+--> Set password
+--> Choose console login
+--> Chose keyboard layout and locales
+--> Overclocking, High, 900MHz CPU, 250MHz Core, 450MHz SDRAM (If you do any voltmodding ensure you have a good power supply for the PI)
+--> Under advanced options:
+--> --> Hostname: master //I called mine master.
+--> --> Memory split: 16mb
+--> --> Enable SSH Server
+--> --> Restart the PI.
 
 
 

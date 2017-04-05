@@ -16,17 +16,17 @@ Let me know of any typos or anything else you feel this recipe is missing. This 
 
 - A router: I used a basic, 5-port router to start. It was cheap. Then I was invited present the cluster to some folks at the university I attend for my Master's and I needed a wireless to make the cluster remotely. It's up to you.  Sources: (wired) [Amazon](http://amzn.to/2oGa02T), (wireless) [Amazon](http://amzn.to/2oFQ5kF)
 
-- 32 GB Micro SD cards: I had 4 Raspberry PI's so I bought 4 Micro SD Cards. You can go small or big on the disk volume, depending on your intended use, however, I would HIGHLY recommend Class 10 or above if possible. The higher the class, the faster the read & write speeds. I noticed that the Class 10's were significantly faster than the Class 4's I started out with. Sources: http://amzn.to/2oA7LBh
+- 32 GB Micro SD cards: I had 4 Raspberry PI's so I bought 4 Micro SD Cards. You can go small or big on the disk volume, depending on your intended use, however, I would HIGHLY recommend Class 10 or above if possible. The higher the class, the faster the read & write speeds. I noticed that the Class 10's were significantly faster than the Class 4's I started out with. Sources: [Amazon](http://amzn.to/2oA7LBh)
 
-- Micro USB cables: You'll need 4. I liked the flat ones. Makes it easy to aesthetically manage the cables.  Sources: http://amzn.to/2oznxwD
+- Micro USB cables: You'll need 4. I liked the flat ones. Makes it easy to aesthetically manage the cables.  Sources: [Amazon](http://amzn.to/2oznxwD)
 
-- Ethernet Patch Cables: You'll need 4. These are flat, too.  Sources: http://amzn.to/2oFYCnW
+- Ethernet Patch Cables: You'll need 4. These are flat, too.  Sources: [Amazon](http://amzn.to/2oFYCnW)
 
-- Electrical Strip: Need one to plug in your power source and router. Out of caution, I bought one that had some surge protection and an accompanying guarantee. They are a little more expensive but they make you feel like you're protecting your newly acquired toy during a thunder-storm.  Sources: http://amzn.to/2ozuI7J
+- Electrical Strip: Need one to plug in your power source and router. Out of caution, I bought one that had some surge protection and an accompanying guarantee. They are a little more expensive but they make you feel like you're protecting your newly acquired toy during a thunder-storm.  Sources: [Amazon](http://amzn.to/2ozuI7J)
 
-- USB Fan: Just for fun.  Sources: http://amzn.to/2oFYHb2
+- USB Fan: Just for fun.  Sources: [Amazon](http://amzn.to/2oFYHb2)
 
-- Acrylic, Stacked Case: Gives a nice presentation of the cluster. Sources: http://amzn.to/2ozuIEN
+- Acrylic, Stacked Case: Gives a nice presentation of the cluster. Sources: [Amazon](http://amzn.to/2ozuIEN)
 
 This is how I assembled the cluster. Feel free to get artistic. Just keep in mind that there are certain thing that you can't change - each RP3B absolutely needs 2.5 amps or more power, etc. And this isn't an endorsement of Amazon but they do make things easier.
 
@@ -34,9 +34,7 @@ This is how I assembled the cluster. Feel free to get artistic. Just keep in min
 
 I did not make this cluster in a vacuum. I don't have the technical background necessary to "wing it". However, with the right instruction just about anyone can get started and learn. I had no background in Linux so it took me about a month to get the cluster working the first time.
 
-Beginner Linux code: 
-
-http://www.makeuseof.com/tag/15-useful-commands-every-raspberry-pi-user-should-know/
+[Beginner Linux code](http://www.makeuseof.com/tag/15-useful-commands-every-raspberry-pi-user-should-know/)
 
 Begin here for Hadoop: 
 
@@ -68,7 +66,7 @@ So that's what we're going to do.
 
 Here's a tutorial of how to get the OS onto the MicroSD card: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
 
-If you're lucky enough to own a Mac, as I am, you can use ApplePi Baker, which is an easy and nifty program to put the OS image onto the MicroSD card. https://www.tweaking4all.com/news/applepi-baker-v1-9-1-update/
+If you're lucky enough to own a Mac, as I am, you can use [ApplePi Baker](https://www.tweaking4all.com/news/applepi-baker-v1-9-1-update/), which is an easy and nifty program to put the OS image onto the MicroSD card.
 
 Once you have prepped the MicroSD card with the OS, with the power off, you'll insert it into the RP3B motherboard. That slot is on the front (as opposed to the back where the USB & ethernet ports are).
 

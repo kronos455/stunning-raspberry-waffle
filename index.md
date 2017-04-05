@@ -276,7 +276,7 @@ export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_HOME=$HADOOP_INSTALL
 ```
-### Edit and change varibales in Hadoop environment.sh (/opt/hadoop/etc/hadoop/)
+### Edit and change variables in Hadoop environment.sh (/opt/hadoop/etc/hadoop/)
 
 ```
 sudo nano /opt/hadoop/etc/hadoop/Hadoop_environment.sh
@@ -288,9 +288,125 @@ Enable the use of native hadoop library and IPv4 stack:
 ```
 export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=$HADOOP_INSTALL/lib/native -Djava.net.preferIPv4Stack=true"
 ```
+### Hadoop 2.7.x YARN and MapReduce memory and resources configuration
 
+Some of the challanges of running Hadoop on the Raspberry is the limited resources. In order for it to run properly, we will need to adjust memory configuration of YARN and Mapreduce framework.
 
+### YARN Configuration (yarn-site.xml)
 
+For more details see: https://hadoop.apache.org/docs/r2.7.2/hadoop-yarn/hadoop-yarn-common/yarn-default.xml
+
+yarn-site.xml
+```
+<configuration>
+    <property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>master:8025</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>master:8035</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>master:8050</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>4</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>768</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>64</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>256</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.minimum-allocation-vcores</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.maximum-allocation-vcores</name>
+        <value>4</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.vmem-pmem-ratio</name>
+        <value>2.1</value>
+    </property>
+</configuration>
+```
+
+mapred-site.xml
+```
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>256</value>
+    </property>
+    <property>
+        <name>mapreduce.map.java.opts</name>
+        <value>-Xmx204m</value>
+    </property>
+    <property>
+        <name>mapreduce.map.cpu.vcores</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>128</value>
+    </property>
+    <property>
+        <name>mapreduce.reduce.java.opts</name>
+        <value>-Xmx102m</value>
+    </property>
+    <property>
+        <name>mapreduce.reduce.cpu.vcores</name>
+        <value>2</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+        <value>128</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.am.command-opts</name>
+        <value>-Xmx102m</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.am.resource.cpu-vcores</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>mapreduce.job.maps</name>
+        <value>4</value>
+    </property>
+    <property>
+        <name>mapreduce.job.reduces</name>
+        <value>4</value>
+    </property>
+</configuration>
+```
 
 
 

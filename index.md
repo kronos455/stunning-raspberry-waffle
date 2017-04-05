@@ -199,21 +199,21 @@ Java 8 uses a more strict syntax than previous version. We need to be less stric
 
 `hadoop-2.7.2-src/pom.xml`
 
-Between <properties></properties> tags insert the following:
+Between `<properties></properties>` tags insert the following:
 ```
 <additionalparam>-Xdoclint:none</additionalparam>
 ```
 For Hadoop 2.7.2 to build properly we also need to apply a patch.
-
+```
 cd hadoop-2.7.2-src/hadoop-common-project/hadoop-common/src
 wget https://issues.apache.org/jira/secure/attachment/12570212/HADOOP-9320.patch
 patch < HADOOP-9320.patch
 cd ~/hadoop-2.7.2-src/
-
+```
 To start build Hadoop run the following: (Note this may take ~1,5 hours)
-
-sudo mvn package -Pdist,native -DskipTests -Dtar
-
+```
+sudo mvn package -clean -Pdist,native -DskipTests -Dtar
+```
 
 
 

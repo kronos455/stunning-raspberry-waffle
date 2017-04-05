@@ -1,4 +1,4 @@
-# Build a Raspberry Pi Cluster with Apache Hadoop
+# Build a Raspberry Pi Cluster to Run Apache Hadoop
 
 ## Preface
 This page explains how I put together the Raspberry Pi 3 Bramble. Because I didn't know any Linux command line when I first started, this 

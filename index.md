@@ -168,7 +168,9 @@ su hduser
 ssh localhost
 exit
 ```
-New line
+Or, if you kind of know what you're doing in Linux, just do all of this from the user root. I found it easier (it's not more secure, though).
+
+
 
 
 
